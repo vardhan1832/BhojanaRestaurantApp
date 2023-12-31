@@ -1,0 +1,8 @@
+.mealitem{
+    border-bottom: 1px solid rgb(82, 78, 78);
+    padding: 8px 0;
+}
+
+.mealitem:last-child{
+    border-bottom: none;
+}
