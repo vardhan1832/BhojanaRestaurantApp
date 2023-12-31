@@ -8,8 +8,10 @@ const Header = () => {
       <header className="header">
         <h1>BHOJANA</h1>
         <button>
-            <CartIcon/>
-            <span className="cart">Your Cart :</span>
+          <span className="icon">
+          <CartIcon/>
+          </span>
+            <span>Your Cart :</span>
             <span className="badge">3</span>
         </button>
       </header>

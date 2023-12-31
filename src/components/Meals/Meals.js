@@ -7,9 +7,7 @@ const Meals = ()=>{
     return (
         <React.Fragment>
             <Summary/>
-            <div className="container">
             <AvailableMeals/>
-            </div>
         </React.Fragment>
     )
 }
