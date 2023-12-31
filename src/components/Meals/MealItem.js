@@ -11,14 +11,15 @@ const MealItem = (props) =>{
             </div>
             <div>
                 <form>
-                    <div class='form-control' >
-                    <label htmlFor="Amount">Amount</label>
-                    <input id='Amount' type='number' min='0' />
+                    <div className='form' >
+                        <div class='form-control' >
+                        <label htmlFor="Amount">Amount</label>
+                        <input id='Amount' type='number' min='0' />
+                        </div>
+                        <div class='form-actions' >
+                        <button type='submit' >+ Add</button>
+                        </div>
                     </div>
-                    <div class='form-actions' >
-                    <button type='submit' >+ Add</button>
-                    </div>
-                    
                 </form>
             </div>
         </li>

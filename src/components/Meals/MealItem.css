@@ -19,6 +19,9 @@
     color: #ad5502;
     font-size: 1.25rem;
 }
+.form{
+    text-align: right;
+}
 .form-control input{
     width:2.3rem;
     border-radius: 3px;
@@ -44,5 +47,5 @@
 
 .form-actions button:hover,
 .form-actions button:active{
-    background-color: #3d1f03;
+    background-color: #2e1803;
 }
