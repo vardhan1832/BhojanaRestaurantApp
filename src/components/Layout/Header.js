@@ -1,8 +1,13 @@
-import React from "react";
+import React,{useContext} from "react";
 import "./Header.css";
 import mealsImage from "../../assets/meals.jpg";
 import CartIcon from "../Cart/CartIcon";
+import CartContext from "../../store/cartcontext";
 const Header = (props) => {
+  const cartctx = useContext(CartContext)
+  const numberofCartItems = cartctx.items.reduce((currentamount,item)=>{
+    return currentamount + Number(item.Amount)
+  },0)
   const cartHandler = ()=>{
      props.onCartclick()
   }
@@ -15,7 +20,7 @@ const Header = (props) => {
           <CartIcon/>
           </span>
             <span>Your Cart :</span>
-            <span className="badge">3</span>
+            <span className="badge">{numberofCartItems}</span>
         </button>
       </header>
       <div className="main-image">
