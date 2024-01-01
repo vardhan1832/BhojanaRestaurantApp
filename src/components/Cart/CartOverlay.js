@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDom from "react-dom";
 import "./CartOverlay.css";
-const CartOverlay = () => {
+const CartOverlay = (props) => {
+  const cancelHandler = ()=>{
+      props.onCancelClick()
+  }
   return  ReactDom.createPortal(
     <div className="cart-overlay">
       <p>Sushi</p>
@@ -9,7 +12,7 @@ const CartOverlay = () => {
         Total Amount <span>35.6</span>{" "}
       </h3>
       <div className='actions'>
-      <button>Cancel</button>
+      <button onClick={cancelHandler}>Cancel</button>
       <button>Order</button>
       </div>
       

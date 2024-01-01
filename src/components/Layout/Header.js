@@ -2,12 +2,15 @@ import React from "react";
 import "./Header.css";
 import mealsImage from "../../assets/meals.jpg";
 import CartIcon from "../Cart/CartIcon";
-const Header = () => {
+const Header = (props) => {
+  const cartHandler = ()=>{
+     props.onCartclick()
+  }
   return (
     <React.Fragment>
       <header className="header">
         <h1>BHOJANA</h1>
-        <button>
+        <button onClick={cartHandler}>
           <span className="icon">
           <CartIcon/>
           </span>

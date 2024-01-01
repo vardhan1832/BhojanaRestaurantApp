@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDom from "react-dom";
 import "./Backdrop.css";
-const Backdrop = () => {
+const Backdrop = (props) => {
+  const backdropHandler = ()=>{
+    props.onClickBackdrop()
+  }
   return ReactDom.createPortal(
-    <div className="backdrop">
+    <div className="backdrop" onClick={backdropHandler}>
        
     </div>,
     document.getElementById("backdrop")
