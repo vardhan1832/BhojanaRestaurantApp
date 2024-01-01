@@ -7,6 +7,7 @@ const Meals = ()=>{
     return (
         <React.Fragment>
             <Summary/>
+            <h2 className="menu">BHOJANA'S AVAILABLE</h2>
             <AvailableMeals/>
         </React.Fragment>
     )
